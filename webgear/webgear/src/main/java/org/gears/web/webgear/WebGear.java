@@ -1,5 +1,7 @@
 package org.gears.web.webgear;
 
+import org.apache.log4j.Logger;
+import org.gears.Configuration;
 import org.gears.Gear;
 import org.gears.apache.Apache;
 import org.gears.haproxy.HAProxy;
@@ -9,6 +11,8 @@ import org.gears.vim.Vim;
 
 
 public class WebGear extends Gear {
+	
+	private static final Logger LOG = Logger.getLogger(WebGear.class);
 	
 	public static String TEST_RESOURCES = "src/test/java/resources/";
 	public static String INFO = TEST_RESOURCES + "info.php.vm";

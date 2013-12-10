@@ -1,15 +1,28 @@
 package org.gears.web.webgear;
 
+import java.io.File;
+
+import org.apache.log4j.Logger;
 import org.gears.Configuration;
 import org.gears.Instance;
+import org.gears.utils.ResourceUtil;
 
 public class ProductionConfig {
 	
-	private final static String SSH_KEY = "/Users/cevaris/Documents/workspace/gears/gears/keys/id_rsa";
+	private static final Logger LOG = Logger.getLogger(ProductionConfig.class);
+	
+	private final static String SSH_KEY = ResourceUtil.getResourcePath("id_rsa");
 	
 	private Configuration config = Configuration.getInstance();
 	
 	public ProductionConfig() {
+		
+		File file = new File(SSH_KEY);
+		LOG.info(file.exists());
+		LOG.info(file.getAbsolutePath());
+		LOG.info(file.length());
+		
+		
 		Instance instance1 = new Instance("192.168.2.100", SSH_KEY);
 		config.addInstance("web", instance1);
 		Instance instance2 = new Instance("192.168.2.102", SSH_KEY);
