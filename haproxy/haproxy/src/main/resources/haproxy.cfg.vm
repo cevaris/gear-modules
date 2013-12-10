@@ -30,9 +30,11 @@ listen gears 0.0.0.0:80
     stats enable
     stats uri /haproxy?stats
     stats realm Strictly\ Private
-    stats auth root:mypass
+    stats auth $USERNAME:$PASSWORD
     balance roundrobin
     option httpclose
     option forwardfor
-    server lamp1 192.168.2.102:80 check
-    server lamp2 192.168.2.100:80 check
+    #foreach ($slave in $slaves)
+	    $slave
+	#end
+    #server lamp1 192.168.2.102:80 check
