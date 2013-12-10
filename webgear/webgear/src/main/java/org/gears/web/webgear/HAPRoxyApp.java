@@ -7,7 +7,6 @@ import org.gears.haproxy.Slave;
 
 public class HAPRoxyApp extends HAProxy {
 	
-	
 	public HAPRoxyApp() {
 		Configuration config = Configuration.getInstance();
 		

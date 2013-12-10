@@ -1,21 +1,21 @@
 package org.gears.mysql;
 
 import org.gears.Gear;
+import org.gears.utils.ResourceUtil;
 
 public class MySQL extends Gear {
 	
-	public static String TEST_RESOURCES = "src/test/java/resources/";
-	public static String MY_CNF = TEST_RESOURCES + "my.cnf.vm";
+	public static String MY_CNF = ResourceUtil.getResourcePath("my.cnf.vm");
 	
 	/**
 	 * For MySQL config file
 	 * http://stackoverflow.com/questions/1167056/optimal-mysql-configuration-my-cnf
 	 */
-	public static final String MYSQL_PASS = "mypass";
 	public static final String MYSQL_USER = "root";
+	public static final String MYSQL_PASS = "mypass";
 	
 	public static final String PORT = "3306";
-	public static final String IP_ADDRESS = "192.168.2.101";
+	public static final String IP_ADDRESS = "192.168.2.102";
 
 	@Override
 	public void execute() {
