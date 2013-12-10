@@ -32,13 +32,13 @@ public class WebGear extends Gear {
 		
 		install(vim);
 		
-		install("web", php);
-		install("web", apache);
-		install("web", "-y", "mysql-client php5-mysql" );
-		
-		install("db", mysqlServer);
-		
-		renderInfo();
+//		install("web", php);
+//		install("web", apache);
+//		install("web", "-y", "mysql-client php5-mysql" );
+//		
+//		install("db", mysqlServer);
+//		
+//		renderInfo();
 	}
 	
 	private void renderInfo(){

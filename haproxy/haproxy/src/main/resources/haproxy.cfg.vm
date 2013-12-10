@@ -30,11 +30,11 @@ listen gears 0.0.0.0:80
     stats enable
     stats uri /haproxy?stats
     stats realm Strictly\ Private
-    stats auth $USERNAME:$PASSWORD
-    balance roundrobin
+    stats auth ${HAProxy.username}:${HAProxy.password}
+    balance ${HAProxy.balancer.toLowerCase()}
     option httpclose
     option forwardfor
-    #foreach ($slave in $slaves)
-	    $slave
-	#end
     #server lamp1 192.168.2.102:80 check
+    #foreach ($slave in $HAProxy.slaves)$slave
+    #end
+    
