@@ -18,7 +18,7 @@ public class HAProxyTest {
 	@Test
 	public void testDynamicContext() {
 		
-		Gear gear = new HAProxyAppTest();
+		HAProxyAppTest gear = new HAProxyAppTest();
 		Templaton templaton = Templaton.getInstance();
 		Context context = Templaton.getContext(gear);
 		String document = templaton.render(CONFIG, context).toString();
