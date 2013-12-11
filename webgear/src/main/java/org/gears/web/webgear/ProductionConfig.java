@@ -19,7 +19,7 @@ public class ProductionConfig {
 		config.addInstance("web", new Instance("192.168.2.100", SSH_KEY, System.RED_HAT) );
 		config.addInstance("web", new Instance("192.168.2.101", SSH_KEY, System.RED_HAT) );
 		
-//		config.addInstance("db",  new Instance("192.168.2.102", SSH_KEY) );
+		config.addInstance("db",  new Instance("192.168.2.102", SSH_KEY, System.RED_HAT) );
 //		
 //		config.addInstance("lb",  new Instance("192.168.2.103", SSH_KEY) );
 //		

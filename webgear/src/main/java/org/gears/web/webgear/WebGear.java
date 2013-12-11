@@ -34,13 +34,13 @@ public class WebGear extends Gear {
 //		install(vim);
 //		
 //		// Install web and mysql to web servers
-		install( "web", php );
+//		install( "web", php );
 //		install("web", apache );
 //		install("web", "-y", "mysql-client php5-mysql" );
 //		renderInfo();
 //		
 //		// Install MySQL to db server
-//		install("db", mysql );
+		install("db", mysql );
 //		
 //		// Setup load balancer server
 //		install("lb", haproxy);
@@ -54,7 +54,7 @@ public class WebGear extends Gear {
 	
 
 	private void renderInfo(){
-    	render("web", "info.php", "/var/www/info.php");	
+    	render("web", "info.php", "/var/www/html/info.php");	
 	}
 	
 }

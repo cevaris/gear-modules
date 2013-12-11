@@ -2,9 +2,7 @@ package org.gears.mysql;
 
 import org.apache.log4j.Logger;
 import org.gears.Gear;
-import org.gears.aws.EC2Factory;
-import org.gears.template.Templaton;
-import org.gears.utils.ResourceUtil;
+import org.gears.System;
 
 public class MySQL extends Gear {
 	
@@ -18,7 +16,7 @@ public class MySQL extends Gear {
 	public static String MYSQL_PASS = "mypass";
 	
 	public static String port = "3306";
-	public static String ipAddress = "192.168.2.102";
+	public static String ipAddress = "127.0.0.1";
 	
 	public static String getPort() {
 		return port;
@@ -37,6 +35,10 @@ public class MySQL extends Gear {
 		
 		// Install misc apps
 		install( "-y", "mysql-server php5-mysql php5 php5-mcrypt" );
+		
+		if(isSystem(System.RED_HAT)){
+			install( "-y", "php-mysql php-pear" );
+		}
 		
 		renderConfig();
 		

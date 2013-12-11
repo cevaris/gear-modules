@@ -10,16 +10,33 @@ public class Apache extends Gear {
 		// Update application repository
 //		update();
 		
-		// Install misc apps
-		install( "-y", "apache2 libapache2-mod-php5 php5-mcrypt" );
-
-		// Restart Apache service, equals to "service apache2 restart"
-		restart("apache2");
+		switch (getSystem()) {
+		
+		case DEBIAN:
+			install( "-y", "apache2 libapache2-mod-php5 php5-mcrypt" );
+			restart("apache2");
+			break;
+			
+		case RED_HAT:
+			install("-y", "httpd");
+			restart("httpd");
+			break;
+		}
+		
 	}
 	
 	@Override
 	public String toString() {
-		return "apache2";
+		
+		String result = null;
+		
+		switch (getSystem()) {
+		case DEBIAN:  result = "apache2"; break;
+		case RED_HAT: result = "httpd";   break;
+		}
+		
+		return result;
+		
 	}
 
 }
