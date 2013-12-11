@@ -8,7 +8,7 @@ public class Apache extends Gear {
 	@Override
 	public void execute() {
 		// Update application repository
-		update();
+//		update();
 		
 		// Install misc apps
 		install( "-y", "apache2 libapache2-mod-php5 php5-mcrypt" );

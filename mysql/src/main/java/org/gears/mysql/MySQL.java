@@ -34,7 +34,7 @@ public class MySQL extends Gear {
 
 	@Override
 	public void execute() {
-		update();
+//		update();
 		
 		// Hack for automating Mysql install
 		command(String.format("echo mysql-server-5.5 mysql-server/root_password password %s | debconf-set-selections", MYSQL_PASS));

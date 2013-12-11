@@ -7,7 +7,7 @@ public class Vim extends Gear {
 	@Override
 	public void execute() {
 		// Update application repository
-		update();
+//		update();
 
 		// Install misc apps
 		install("vim");

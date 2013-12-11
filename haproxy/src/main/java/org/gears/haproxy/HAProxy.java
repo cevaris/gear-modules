@@ -17,7 +17,7 @@ public class HAProxy extends Gear {
 	@Override
 	public void execute() {
 		// Update application repository
-		update();
+//		update();
 		
 		install( "-y", "haproxy" );
 		

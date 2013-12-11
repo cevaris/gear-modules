@@ -25,6 +25,8 @@ public class WebGear extends Gear {
 
 	@Override
 	public void execute() {
+		update();
+		
 		install(vim);
 		
 		install("web", php );
