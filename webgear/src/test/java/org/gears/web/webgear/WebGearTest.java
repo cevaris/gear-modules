@@ -1,8 +1,5 @@
 package org.gears.web.webgear;
 
-import static org.junit.Assert.*;
-
-
 import org.gears.Gear;
 import org.junit.Test;
 
