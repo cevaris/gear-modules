@@ -16,5 +16,10 @@ public class Apache extends Gear {
 		// Restart Apache service, equals to "service apache2 restart"
 		restart("apache2");
 	}
+	
+	@Override
+	public String toString() {
+		return "apache2";
+	}
 
 }

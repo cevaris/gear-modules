@@ -12,18 +12,23 @@ public class HAProxy extends Gear {
 	
 	public String username = "root";
 	public String password = "mypass";
-	public Balancer balancer = Balancer.LEASTCONN;
+	public Balancer balancer = Balancer.ROUNDROBIN;
 	
 	@Override
 	public void execute() {
 		// Update application repository
 		update();
 		
-		// Install misc apps
 		install( "-y", "haproxy" );
+		
+		renderConfig();
 
-		// Restart Apache service, equals to "service apache2 restart"
-		restart("apache2");
+		start("haproxy");
+	}
+	
+	private void renderConfig(){
+		render("default.haproxy.vm", "/etc/default/haproxy");
+		render("haproxy.cfg.vm", "/etc/haproxy/haproxy.cfg");
 	}
 	
 	
