@@ -20,8 +20,8 @@ public class ProductionConfig {
 		
 		config.addInstance("db",  new Instance("192.168.2.102", SSH_KEY) );
 		
-//			Instance instance4 = new Instance("192.168.2.103", SSH_KEY);
-//			config.addInstance("lb", instance4);
+		config.addInstance("lb",  new Instance("192.168.2.103", SSH_KEY) );
+		
 	}
 
 }

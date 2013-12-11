@@ -16,12 +16,6 @@ public class WebGear extends Gear {
 	private static final Logger LOG = Logger.getLogger(WebGear.class);
 	
 	
-	Gear mysql   = new MySQL();
-	Gear haproxy = new HAProxy();
-	Gear vim     = new Vim();
-	Gear php     = new PHP();
-	Gear apache  = new Apache();
-	
 	public WebGear() {
 		new ProductionConfig();
 	}
@@ -29,17 +23,25 @@ public class WebGear extends Gear {
 	@Override
 	public void execute() {
 		
-//		install(vim);
-//		
-//		install("web", php );
-//		install("web", apache );
-//		install("web", "-y", "mysql-client php5-mysql" );
+		Gear mysql   = new MySQL();
+		Gear vim     = new Vim();
+		Gear php     = new PHP();
+		Gear apache  = new Apache();
+		Gear haproxy = new HAPRoxyApp();
 		
-//		install("db", mysql );
+		install(vim);
+		
+		install("web", php );
+		install("web", apache );
+		install("web", "-y", "mysql-client php5-mysql" );
+		
+		install("db", mysql );
 		
 		renderInfo();
 		
-		restart(apache);
+		install("lb", haproxy);
+		
+		restart("web", apache);
 	}
 	
 
