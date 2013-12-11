@@ -1,10 +1,10 @@
 package org.gears.mysql;
 
 import org.apache.log4j.Logger;
-import org.gears.Gear;
+import org.gears.Application;
 import org.gears.System;
 
-public class MySQL extends Gear {
+public class MySQL extends Application {
 	
 	private static final Logger LOG = Logger.getLogger(MySQL.class);
 	

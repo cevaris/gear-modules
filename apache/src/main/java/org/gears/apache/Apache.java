@@ -1,8 +1,8 @@
 package org.gears.apache;
 
-import org.gears.Gear;
+import org.gears.Application;
 
-public class Apache extends Gear {
+public class Apache extends Application {
 	
 		
 	@Override

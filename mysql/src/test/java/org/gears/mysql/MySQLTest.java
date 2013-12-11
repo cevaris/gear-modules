@@ -3,7 +3,7 @@ package org.gears.mysql;
 import static org.junit.Assert.*;
 
 import org.gears.Configuration;
-import org.gears.Gear;
+import org.gears.Application;
 import org.gears.Instance;
 import org.gears.utils.ResourceUtil;
 import org.junit.Test;
@@ -17,7 +17,7 @@ public class MySQLTest {
 		
 		Configuration.getInstance().addInstance("db", new Instance("192.168.2.102", SSH_KEY));
 		
-		Gear mysql = new MySQL();
+		Application mysql = new MySQL();
 		mysql.execute();
 	}
 

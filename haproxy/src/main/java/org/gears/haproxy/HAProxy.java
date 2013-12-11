@@ -3,10 +3,10 @@ package org.gears.haproxy;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.gears.Gear;
+import org.gears.Application;
 
 
-public class HAProxy extends Gear {
+public class HAProxy extends Application {
 	
 	public List<Slave> slaves = new ArrayList<Slave>();
 	

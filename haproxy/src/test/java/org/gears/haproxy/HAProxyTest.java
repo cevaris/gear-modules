@@ -3,7 +3,7 @@ package org.gears.haproxy;
 import static org.junit.Assert.*;
 
 import org.apache.velocity.context.Context;
-import org.gears.Gear;
+import org.gears.Application;
 import org.gears.template.Templaton;
 import org.gears.utils.ResourceUtil;
 import org.junit.Test;
@@ -15,7 +15,7 @@ public class HAProxyTest {
 	
 	@Test
 	public void testDynamicContext() {
-		Gear gear = new HAProxyAppTest();
+		Application gear = new HAProxyAppTest();
 		Templaton templaton = Templaton.getInstance();
 		Context context = Templaton.getContext(gear);
 		String document = templaton.render(CONFIG, context).toString();

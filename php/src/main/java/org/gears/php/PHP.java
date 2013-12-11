@@ -1,8 +1,8 @@
 package org.gears.php;
 
-import org.gears.Gear;
+import org.gears.Application;
 
-public class PHP extends Gear {
+public class PHP extends Application {
 
 	@Override
 	public void execute() {

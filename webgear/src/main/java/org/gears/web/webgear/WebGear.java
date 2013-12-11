@@ -2,7 +2,7 @@ package org.gears.web.webgear;
 
 import org.apache.log4j.Logger;
 import org.gears.Configuration;
-import org.gears.Gear;
+import org.gears.Application;
 import org.gears.Instance;
 import org.gears.apache.Apache;
 import org.gears.memcached.Memcached;
@@ -11,18 +11,18 @@ import org.gears.php.PHP;
 import org.gears.vim.Vim;
 
 
-public class WebGear extends Gear {
+public class WebGear extends Application {
 	
 	private static final Logger LOG = Logger.getLogger(WebGear.class);
 	
 	ProductionConfig config = new ProductionConfig();
 	
-	Gear mysql   = new MySQL();
-	Gear vim     = new Vim();
-	Gear php     = new PHP();
-	Gear apache  = new Apache();
-	Gear haproxy = new HAPRoxyApp();
-	Gear memcached = new MemcachedApp();
+	Application mysql   = new MySQL();
+	Application vim     = new Vim();
+	Application php     = new PHP();
+	Application apache  = new Apache();
+	Application haproxy = new HAPRoxyApp();
+	Application memcached = new MemcachedApp();
 
 	@Override
 	public void execute() {
