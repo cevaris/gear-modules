@@ -15,7 +15,6 @@ public class WebGear extends Gear {
 	
 	private static final Logger LOG = Logger.getLogger(WebGear.class);
 	
-//	public static String INFO = ResourceUtil.getResourcePath("info.php.vm");
 	public static String INFO = "info.php.vm";
 	
 	Gear mysql   = new MySQL();
@@ -31,11 +30,11 @@ public class WebGear extends Gear {
 	@Override
 	public void execute() {
 		
-//		install(vim);
-//		
-		install("web", php);
-		install("web", apache);
-//		install("web", "-y", "mysql-client php5-mysql" );
+		install(vim);
+		
+		install("web", php );
+		install("web", apache );
+		install("web", "-y", "mysql-client php5-mysql" );
 		
 		install("db", mysql );
 		

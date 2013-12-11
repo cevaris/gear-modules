@@ -34,24 +34,24 @@ public class MySQL extends Gear {
 
 	@Override
 	public void execute() {
-//		update();
-//		
-//		// Hack for automating Mysql install
-//		command(String.format("echo mysql-server-5.5 mysql-server/root_password password %s | debconf-set-selections", MYSQL_PASS));
-//		command(String.format("echo mysql-server-5.5 mysql-server/root_password_again password %s | debconf-set-selections", MYSQL_PASS));
-//		
-//		// Install misc apps
-//		install( "-y", "mysql-server php5-mysql php5 php5-mcrypt" );
-//		
+		update();
+		
+		// Hack for automating Mysql install
+		command(String.format("echo mysql-server-5.5 mysql-server/root_password password %s | debconf-set-selections", MYSQL_PASS));
+		command(String.format("echo mysql-server-5.5 mysql-server/root_password_again password %s | debconf-set-selections", MYSQL_PASS));
+		
+		// Install misc apps
+		install( "-y", "mysql-server php5-mysql php5 php5-mcrypt" );
+		
 		renderConfig();
-//		
-//		// Grant Remote access
-//		command("mysql -u root --password='mypass' -e \"GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.2.%' IDENTIFIED BY 'mypass' WITH GRANT OPTION; FLUSH PRIVILEGES;\"");
-//		command("mysql -u root --password='mypass' -e \"GRANT ALL PRIVILEGES ON *.* TO 'root'@'nod%' IDENTIFIED BY 'mypass' WITH GRANT OPTION; FLUSH PRIVILEGES;\"");
-//		
-//		openPort("3306");
-//		
-//		restart("mysql");
+		
+		// Grant Remote access
+		command("mysql -u root --password='mypass' -e \"GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.2.%' IDENTIFIED BY 'mypass' WITH GRANT OPTION; FLUSH PRIVILEGES;\"");
+		command("mysql -u root --password='mypass' -e \"GRANT ALL PRIVILEGES ON *.* TO 'root'@'nod%' IDENTIFIED BY 'mypass' WITH GRANT OPTION; FLUSH PRIVILEGES;\"");
+		
+		openPort("3306");
+		
+		restart("mysql");
 	}
 
 	private void renderConfig(){
