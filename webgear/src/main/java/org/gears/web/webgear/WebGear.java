@@ -1,7 +1,9 @@
 package org.gears.web.webgear;
 
 import org.apache.log4j.Logger;
+import org.gears.Configuration;
 import org.gears.Gear;
+import org.gears.Instance;
 import org.gears.apache.Apache;
 import org.gears.memcached.Memcached;
 import org.gears.mysql.MySQL;
@@ -24,14 +26,15 @@ public class WebGear extends Gear {
 
 	@Override
 	public void execute() {
+		
 		// Update all machines
-		update();
+//		update();
 //		
 //		// Install Vim on all machines		
-		install(vim);
+//		install(vim);
 //		
 //		// Install web and mysql to web servers
-//		install("web", php );
+		install( "web", php );
 //		install("web", apache );
 //		install("web", "-y", "mysql-client php5-mysql" );
 //		renderInfo();
