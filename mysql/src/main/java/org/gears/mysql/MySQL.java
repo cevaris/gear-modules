@@ -10,20 +10,15 @@ public class MySQL extends Gear {
 	
 	private static final Logger LOG = Logger.getLogger(MySQL.class);
 	
-	
-//	public static String MY_CNF = ResourceUtil.getResourcePath("my.cnf.vm");
-	public static String MY_CNF = "my.cnf.vm";
-	
 	/**
 	 * For MySQL config file
 	 * http://stackoverflow.com/questions/1167056/optimal-mysql-configuration-my-cnf
 	 */
-	public static final String MYSQL_USER = "root";
-	public static final String MYSQL_PASS = "mypass";
+	public static String MYSQL_USER = "root";
+	public static String MYSQL_PASS = "mypass";
 	
-	public static final String port = "3306";
-	public static final String ipAddress = "192.168.2.102";
-	
+	public static String port = "3306";
+	public static String ipAddress = "192.168.2.102";
 	
 	public static String getPort() {
 		return port;
@@ -51,11 +46,18 @@ public class MySQL extends Gear {
 		
 		openPort("3306");
 		
-		restart("mysql");
+		restart(this);
 	}
-
+	
+	@Override
+	public String toString() {
+		return "mysql";
+	}
+	
 	private void renderConfig(){
-		render(MY_CNF, "/etc/mysql/my.cnf");
+		render("my.cnf.vm", "/etc/mysql/my.cnf");
 	}
+	
+	
 
 }

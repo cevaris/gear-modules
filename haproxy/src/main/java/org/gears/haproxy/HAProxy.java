@@ -16,21 +16,17 @@ public class HAProxy extends Gear {
 	
 	@Override
 	public void execute() {
-		// Update application repository
-//		update();
-		
 		install( "-y", "haproxy" );
 		
 		renderConfig();
 
 		start("haproxy");
-		restart("haproxy");
+		restart(this);
 	}
-	
 
 	private void renderConfig(){
 		render("default.haproxy.vm", "/etc/default/haproxy");
-		render("haproxy.cfg.vm", "/etc/haproxy/haproxy.cfg");
+		render("haproxy.cfg.vm",     "/etc/haproxy/haproxy.cfg");
 	}
 	
 	@Override
