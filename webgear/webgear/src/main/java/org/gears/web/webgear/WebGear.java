@@ -15,13 +15,14 @@ public class WebGear extends Gear {
 	
 	private static final Logger LOG = Logger.getLogger(WebGear.class);
 	
-	public static String INFO = ResourceUtil.getResourcePath("info.php.vm");
+//	public static String INFO = ResourceUtil.getResourcePath("info.php.vm");
+	public static String INFO = "info.php.vm";
 	
-	Gear mysqlServer = new MySQL();
-	Gear haproxy     = new HAProxy();
-	Gear vim         = new Vim();
-	Gear php         = new PHP();
-	Gear apache      = new Apache();
+	Gear mysql   = new MySQL();
+	Gear haproxy = new HAProxy();
+	Gear vim     = new Vim();
+	Gear php     = new PHP();
+	Gear apache  = new Apache();
 	
 	public WebGear() {
 		new ProductionConfig();
@@ -32,11 +33,11 @@ public class WebGear extends Gear {
 		
 //		install(vim);
 //		
-//		install("web", php);
-//		install("web", apache);
-		install("web", "-y", "mysql-client php5-mysql" );
+		install("web", php);
+		install("web", apache);
+//		install("web", "-y", "mysql-client php5-mysql" );
 		
-		install("db", mysqlServer);
+		install("db", mysql );
 		
 		renderInfo();
 	}

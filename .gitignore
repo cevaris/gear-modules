@@ -4,5 +4,7 @@
 .DS_Store
 target/
 tmp/
+logs/
 ./gears/
 *.zip
+*.log
