@@ -1,7 +1,5 @@
 package org.gears.web.webgear;
 
-import java.io.File;
-
 import org.apache.log4j.Logger;
 import org.gears.Configuration;
 import org.gears.Instance;
@@ -11,7 +9,7 @@ public class ProductionConfig {
 	
 	private static final Logger LOG = Logger.getLogger(ProductionConfig.class);
 	
-	private final static String SSH_KEY = ResourceUtil.getResourcePath("id_rsa");
+	private final static String SSH_KEY = ResourceUtil.getHomeDirectoryPath(".ssh/vagrant-keys/id_rsa");
 	
 	private Configuration config = Configuration.getInstance();
 	

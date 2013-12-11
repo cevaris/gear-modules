@@ -30,10 +30,10 @@ public class WebGear extends Gear {
 	@Override
 	public void execute() {
 		
-		install(vim);
-		
-		install("web", php);
-		install("web", apache);
+//		install(vim);
+//		
+//		install("web", php);
+//		install("web", apache);
 		install("web", "-y", "mysql-client php5-mysql" );
 		
 		install("db", mysqlServer);

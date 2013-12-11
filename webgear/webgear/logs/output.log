@@ -1,0 +1,636 @@
+INFO main net.schmizz.sshj.common.SecurityUtils - BouncyCastle already registered as a JCE provider
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.100] - apt-get -y install mysql-client php5-mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-client php5-mysql`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - mysql-client is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-client php5-mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.101] - apt-get -y install mysql-client php5-mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-client php5-mysql`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - mysql-client is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-client php5-mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - apt-get -y install mysql-client php5-mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-client php5-mysql`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - mysql-client is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-client php5-mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - apt-get update
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get update`
+  INFO main org.gears.connection.SSHConnection - Ign http://us.archive.ubuntu.com precise InRelease
+  INFO main org.gears.connection.SSHConnection - Ign http://us.archive.ubuntu.com precise-updates InRelease
+  INFO main org.gears.connection.SSHConnection - Ign http://us.archive.ubuntu.com precise-backports InRelease
+  INFO main org.gears.connection.SSHConnection - Ign http://security.ubuntu.com precise-security InRelease
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise Release.gpg
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates Release.gpg
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports Release.gpg
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security Release.gpg
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise Release
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates Release
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports Release
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security Release
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/main Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/restricted Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/universe Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/multiverse Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/main amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/restricted amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/universe amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/multiverse amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/main i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/restricted i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/universe i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/multiverse i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/main TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/multiverse TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/restricted TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/universe TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/main Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/multiverse Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/restricted Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/universe Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe Translation-en
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get update
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - echo mysql-server-5.5 mysql-server/root_password password mypass | debconf-set-selections
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `echo mysql-server-5.5 mysql-server/root_password password mypass | debconf-set-selections`
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command echo mysql-server-5.5 mysql-server/root_password password mypass | debconf-set-selections
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - echo mysql-server-5.5 mysql-server/root_password_again password mypass | debconf-set-selections
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `echo mysql-server-5.5 mysql-server/root_password_again password mypass | debconf-set-selections`
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command echo mysql-server-5.5 mysql-server/root_password_again password mypass | debconf-set-selections
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - apt-get -y install mysql-server php5-mysql php5 php5-mcrypt
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-server php5-mysql php5 php5-mcrypt`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - php5-mcrypt is already the newest version.
+  INFO main org.gears.connection.SSHConnection - mysql-server is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5 is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-server php5-mysql php5 php5-mcrypt
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.template.Templaton - MySQL
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - mkdir -p /etc/mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `mkdir -p /etc/mysql`
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command mkdir -p /etc/mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO Thread-0 java.lang.Class - Shutting down...
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  INFO Thread-0 java.lang.Class - Done!
+  INFO main net.schmizz.sshj.common.SecurityUtils - BouncyCastle already registered as a JCE provider
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.100] - apt-get -y install mysql-client php5-mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-client php5-mysql`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - mysql-client is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-client php5-mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.101] - apt-get -y install mysql-client php5-mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-client php5-mysql`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - mysql-client is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-client php5-mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - apt-get update
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get update`
+  INFO main org.gears.connection.SSHConnection - Ign http://us.archive.ubuntu.com precise InRelease
+  INFO main org.gears.connection.SSHConnection - Ign http://security.ubuntu.com precise-security InRelease
+  INFO main org.gears.connection.SSHConnection - Ign http://us.archive.ubuntu.com precise-updates InRelease
+  INFO main org.gears.connection.SSHConnection - Ign http://us.archive.ubuntu.com precise-backports InRelease
+  INFO main org.gears.connection.SSHConnection - Get:1 http://security.ubuntu.com precise-security Release.gpg [198 B]
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise Release.gpg
+  INFO main org.gears.connection.SSHConnection - Get:2 http://security.ubuntu.com precise-security Release [49.6 kB]
+  INFO main org.gears.connection.SSHConnection - Get:3 http://us.archive.ubuntu.com precise-updates Release.gpg [198 B]
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports Release.gpg
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise Release
+  INFO main org.gears.connection.SSHConnection - Get:4 http://us.archive.ubuntu.com precise-updates Release [49.6 kB]
+  INFO main org.gears.connection.SSHConnection - Get:5 http://security.ubuntu.com precise-security/main Sources [93.9 kB]
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports Release
+  INFO main org.gears.connection.SSHConnection - Get:6 http://security.ubuntu.com precise-security/restricted Sources [2,494 B]
+  INFO main org.gears.connection.SSHConnection - Get:7 http://security.ubuntu.com precise-security/universe Sources [30.0 kB]
+  INFO main org.gears.connection.SSHConnection - Get:8 http://security.ubuntu.com precise-security/multiverse Sources [1,792 B]
+  INFO main org.gears.connection.SSHConnection - Get:9 http://security.ubuntu.com precise-security/main amd64 Packages [347 kB]
+  INFO main org.gears.connection.SSHConnection - Get:10 http://security.ubuntu.com precise-security/restricted amd64 Packages [4,627 B]
+  INFO main org.gears.connection.SSHConnection - Get:11 http://security.ubuntu.com precise-security/universe amd64 Packages [85.4 kB]
+  INFO main org.gears.connection.SSHConnection - Get:12 http://security.ubuntu.com precise-security/multiverse amd64 Packages [2,446 B]
+  INFO main org.gears.connection.SSHConnection - Get:13 http://security.ubuntu.com precise-security/main i386 Packages [367 kB]
+  INFO main org.gears.connection.SSHConnection - Get:14 http://security.ubuntu.com precise-security/restricted i386 Packages [4,620 B]
+  INFO main org.gears.connection.SSHConnection - Get:15 http://security.ubuntu.com precise-security/universe i386 Packages [89.4 kB]
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Get:16 http://security.ubuntu.com precise-security/multiverse i386 Packages [2,642 B]
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/main TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/multiverse TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/restricted TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/universe TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/main Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/multiverse Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/restricted Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/universe Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Get:17 http://us.archive.ubuntu.com precise-updates/main Sources [428 kB]
+  INFO Thread-0 java.lang.Class - Shutting down...
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  ERROR main org.gears.connection.SSHConnection - net.schmizz.sshj.transport.TransportException: [BY_APPLICATION] Disconnected
+  INFO Thread-0 java.lang.Class - Done!
+  INFO main net.schmizz.sshj.common.SecurityUtils - BouncyCastle already registered as a JCE provider
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.100] - apt-get -y install mysql-client php5-mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-client php5-mysql`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - mysql-client is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-client php5-mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.101] - apt-get -y install mysql-client php5-mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-client php5-mysql`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - mysql-client is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-client php5-mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - apt-get update
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get update`
+  ERROR main org.gears.connection.SSHConnection - Irregular Exit Status (null) from the following command apt-get update
+  INFO main org.gears.connection.SSHConnection - E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)
+  INFO main org.gears.connection.SSHConnection - E: Unable to lock directory /var/lib/apt/lists/
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - echo mysql-server-5.5 mysql-server/root_password password mypass | debconf-set-selections
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `echo mysql-server-5.5 mysql-server/root_password password mypass | debconf-set-selections`
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command echo mysql-server-5.5 mysql-server/root_password password mypass | debconf-set-selections
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - echo mysql-server-5.5 mysql-server/root_password_again password mypass | debconf-set-selections
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `echo mysql-server-5.5 mysql-server/root_password_again password mypass | debconf-set-selections`
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command echo mysql-server-5.5 mysql-server/root_password_again password mypass | debconf-set-selections
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - apt-get -y install mysql-server php5-mysql php5 php5-mcrypt
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-server php5-mysql php5 php5-mcrypt`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - php5-mcrypt is already the newest version.
+  INFO main org.gears.connection.SSHConnection - mysql-server is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5 is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-server php5-mysql php5 php5-mcrypt
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.template.Templaton - MySQL
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - mkdir -p /etc/mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `mkdir -p /etc/mysql`
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command mkdir -p /etc/mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO Thread-0 java.lang.Class - Shutting down...
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  INFO Thread-0 java.lang.Class - Done!
+  INFO main net.schmizz.sshj.common.SecurityUtils - BouncyCastle already registered as a JCE provider
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.100] - apt-get -y install mysql-client php5-mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-client php5-mysql`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - mysql-client is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-client php5-mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.101] - apt-get -y install mysql-client php5-mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-client php5-mysql`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - mysql-client is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-client php5-mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - apt-get update
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get update`
+  INFO main org.gears.connection.SSHConnection - Ign http://security.ubuntu.com precise-security InRelease
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security Release.gpg
+  INFO main org.gears.connection.SSHConnection - Ign http://us.archive.ubuntu.com precise InRelease
+  INFO main org.gears.connection.SSHConnection - Ign http://us.archive.ubuntu.com precise-updates InRelease
+  INFO main org.gears.connection.SSHConnection - Ign http://us.archive.ubuntu.com precise-backports InRelease
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security Release
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise Release.gpg
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/main Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates Release.gpg
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports Release.gpg
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/restricted Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise Release
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/universe Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates Release
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/multiverse Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports Release
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/main amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/restricted amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/universe amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/multiverse amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/main i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/restricted i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/universe i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/multiverse i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/main TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/multiverse TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/restricted TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/universe TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/main Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/multiverse Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/restricted Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/universe Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe Translation-en
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get update
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - echo mysql-server-5.5 mysql-server/root_password password mypass | debconf-set-selections
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `echo mysql-server-5.5 mysql-server/root_password password mypass | debconf-set-selections`
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command echo mysql-server-5.5 mysql-server/root_password password mypass | debconf-set-selections
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - echo mysql-server-5.5 mysql-server/root_password_again password mypass | debconf-set-selections
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `echo mysql-server-5.5 mysql-server/root_password_again password mypass | debconf-set-selections`
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command echo mysql-server-5.5 mysql-server/root_password_again password mypass | debconf-set-selections
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - apt-get -y install mysql-server php5-mysql php5 php5-mcrypt
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-server php5-mysql php5 php5-mcrypt`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - php5-mcrypt is already the newest version.
+  INFO main org.gears.connection.SSHConnection - mysql-server is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5 is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-server php5-mysql php5 php5-mcrypt
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.template.Templaton - MySQL
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - mkdir -p /etc/mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `mkdir -p /etc/mysql`
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command mkdir -p /etc/mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO Thread-0 java.lang.Class - Shutting down...
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  INFO Thread-0 java.lang.Class - Done!
+  INFO main net.schmizz.sshj.common.SecurityUtils - BouncyCastle already registered as a JCE provider
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  WARN main net.schmizz.sshj.DefaultConfig - Disabling high-strength ciphers: cipher strengths apparently limited by JCE policy
+  INFO main net.schmizz.sshj.transport.TransportImpl - Client identity string: SSH-2.0-SSHJ_0_9_0
+  INFO main net.schmizz.sshj.transport.TransportImpl - Server identity string: SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.100] - apt-get -y install mysql-client php5-mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-client php5-mysql`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - mysql-client is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-client php5-mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.101] - apt-get -y install mysql-client php5-mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-client php5-mysql`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - mysql-client is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-client php5-mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - apt-get update
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get update`
+  INFO main org.gears.connection.SSHConnection - Ign http://us.archive.ubuntu.com precise InRelease
+  INFO main org.gears.connection.SSHConnection - Ign http://us.archive.ubuntu.com precise-updates InRelease
+  INFO main org.gears.connection.SSHConnection - Ign http://us.archive.ubuntu.com precise-backports InRelease
+  INFO main org.gears.connection.SSHConnection - Ign http://security.ubuntu.com precise-security InRelease
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise Release.gpg
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates Release.gpg
+  INFO main org.gears.connection.SSHConnection - Get:1 http://security.ubuntu.com precise-security Release.gpg [198 B]
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports Release.gpg
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise Release
+  INFO main org.gears.connection.SSHConnection - Get:2 http://security.ubuntu.com precise-security Release [49.6 kB]
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates Release
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports Release
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Get:3 http://security.ubuntu.com precise-security/main Sources [93.9 kB]
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse i386 Packages
+  INFO main org.gears.connection.SSHConnection - Get:4 http://security.ubuntu.com precise-security/restricted Sources [2,494 B]
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Get:5 http://security.ubuntu.com precise-security/universe Sources [30.0 kB]
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main Sources
+  INFO main org.gears.connection.SSHConnection - Get:6 http://security.ubuntu.com precise-security/multiverse Sources [1,792 B]
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Get:7 http://security.ubuntu.com precise-security/main amd64 Packages [347 kB]
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse Sources
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse amd64 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse i386 Packages
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Get:8 http://security.ubuntu.com precise-security/restricted amd64 Packages [4,627 B]
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/main Translation-en
+  INFO main org.gears.connection.SSHConnection - Get:9 http://security.ubuntu.com precise-security/universe amd64 Packages [85.4 kB]
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/multiverse Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/restricted Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise/universe Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/main Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/multiverse Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/restricted Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-updates/universe Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/main Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://us.archive.ubuntu.com precise-backports/universe Translation-en
+  INFO main org.gears.connection.SSHConnection - Get:10 http://security.ubuntu.com precise-security/multiverse amd64 Packages [2,446 B]
+  INFO main org.gears.connection.SSHConnection - Get:11 http://security.ubuntu.com precise-security/main i386 Packages [367 kB]
+  INFO main org.gears.connection.SSHConnection - Get:12 http://security.ubuntu.com precise-security/restricted i386 Packages [4,620 B]
+  INFO main org.gears.connection.SSHConnection - Get:13 http://security.ubuntu.com precise-security/universe i386 Packages [89.4 kB]
+  INFO main org.gears.connection.SSHConnection - Get:14 http://security.ubuntu.com precise-security/multiverse i386 Packages [2,642 B]
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/main TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/multiverse TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/restricted TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/universe TranslationIndex
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/main Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/multiverse Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/restricted Translation-en
+  INFO main org.gears.connection.SSHConnection - Hit http://security.ubuntu.com precise-security/universe Translation-en
+  INFO main org.gears.connection.SSHConnection - Fetched 1,081 kB in 7s (151 kB/s)
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get update
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - echo mysql-server-5.5 mysql-server/root_password password mypass | debconf-set-selections
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `echo mysql-server-5.5 mysql-server/root_password password mypass | debconf-set-selections`
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command echo mysql-server-5.5 mysql-server/root_password password mypass | debconf-set-selections
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - echo mysql-server-5.5 mysql-server/root_password_again password mypass | debconf-set-selections
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `echo mysql-server-5.5 mysql-server/root_password_again password mypass | debconf-set-selections`
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command echo mysql-server-5.5 mysql-server/root_password_again password mypass | debconf-set-selections
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - apt-get -y install mysql-server php5-mysql php5 php5-mcrypt
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `apt-get -y install mysql-server php5-mysql php5 php5-mcrypt`
+  INFO main org.gears.connection.SSHConnection - Reading package lists...
+  INFO main org.gears.connection.SSHConnection - Building dependency tree...
+  INFO main org.gears.connection.SSHConnection - Reading state information...
+  INFO main org.gears.connection.SSHConnection - php5-mcrypt is already the newest version.
+  INFO main org.gears.connection.SSHConnection - mysql-server is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5 is already the newest version.
+  INFO main org.gears.connection.SSHConnection - php5-mysql is already the newest version.
+  INFO main org.gears.connection.SSHConnection - 0 upgraded, 0 newly installed, 0 to remove and 152 not upgraded.
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command apt-get -y install mysql-server php5-mysql php5 php5-mcrypt
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO main org.gears.template.Templaton - MySQL
+  INFO main org.gears.connection.SSHConnection - [/192.168.2.102] - mkdir -p /etc/mysql
+  INFO main net.schmizz.sshj.connection.channel.direct.SessionChannel - Will request to exec `mkdir -p /etc/mysql`
+  INFO main org.gears.connection.SSHConnection - Success Exit Status (0) from the following command mkdir -p /etc/mysql
+  INFO main org.gears.connection.SSHConnection - Closed Session
+  INFO Thread-0 java.lang.Class - Shutting down...
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  INFO Thread-0 net.schmizz.sshj.transport.TransportImpl - Disconnected - BY_APPLICATION
+  INFO Thread-0 java.lang.Class - Done!
+  

@@ -1,6 +1,7 @@
 package org.gears.mysql;
 
 import org.gears.Gear;
+import org.gears.template.Templaton;
 import org.gears.utils.ResourceUtil;
 
 public class MySQL extends Gear {
@@ -14,8 +15,16 @@ public class MySQL extends Gear {
 	public static final String MYSQL_USER = "root";
 	public static final String MYSQL_PASS = "mypass";
 	
-	public static final String PORT = "3306";
-	public static final String IP_ADDRESS = "192.168.2.102";
+	public static final String port = "3306";
+	public static final String ipAddress = "192.168.2.102";
+	
+	
+	public static String getPort() {
+		return port;
+	}
+	public static String getIpAddress() {
+		return ipAddress;
+	}
 
 	@Override
 	public void execute() {
@@ -37,7 +46,6 @@ public class MySQL extends Gear {
 		openPort("3306");
 		
 		restart("mysql");
-		
 	}
 
 	private void renderConfig(){
