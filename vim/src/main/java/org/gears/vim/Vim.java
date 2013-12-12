@@ -1,15 +1,14 @@
 package org.gears.vim;
 
 import org.gears.Application;
+import org.gears.GearApplication;
 
-public class Vim extends Application {
+public class Vim extends GearApplication {
 	
 	@Override
 	public void execute() {
-		// Update application repository
-//		update();
-
 		// Install misc apps
 		install("vim");
 	}
+	
 }

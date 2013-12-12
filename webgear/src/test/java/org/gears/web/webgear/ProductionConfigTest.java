@@ -14,7 +14,7 @@ public class ProductionConfigTest extends TestCase {
 	@Test
 	public void testProductionConfig() {
 		
-		ProductionConfig proConfig = new ProductionConfig();
+		ProductionEnv proConfig = new ProductionEnv();
 		Configuration config = Configuration.getInstance();
 		
 		for(Instance instance : config.getInstances()){

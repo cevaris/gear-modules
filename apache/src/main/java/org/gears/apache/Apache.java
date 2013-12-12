@@ -1,42 +1,26 @@
 package org.gears.apache;
 
-import org.gears.Application;
+import org.gears.GearApplication;
+import org.gears.Service;
 
-public class Apache extends Application {
+public class Apache extends GearApplication {
 	
 		
 	@Override
 	public void execute() {
-		// Update application repository
-//		update();
 		
 		switch (getSystem()) {
 		
 		case DEBIAN:
-			install( "-y", "apache2 libapache2-mod-php5 php5-mcrypt" );
-			restart("apache2");
+			install("apache2 libapache2-mod-php5 php5-mcrypt" );
+			service("apache2", Service.RESTART);
 			break;
 			
 		case RED_HAT:
-			install("-y", "httpd");
-			restart("httpd");
+			install("httpd");
+			service("httpd", Service.RESTART);
 			break;
 		}
 		
 	}
-	
-	@Override
-	public String toString() {
-		
-		String result = null;
-		
-		switch (getSystem()) {
-		case DEBIAN:  result = "apache2"; break;
-		case RED_HAT: result = "httpd";   break;
-		}
-		
-		return result;
-		
-	}
-
 }

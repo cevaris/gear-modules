@@ -1,8 +1,9 @@
 package org.gears.php;
 
 import org.gears.Application;
+import org.gears.GearApplication;
 
-public class PHP extends Application {
+public class PHP extends GearApplication {
 
 	@Override
 	public void execute() {
@@ -10,10 +11,10 @@ public class PHP extends Application {
 
 		switch (getSystem()) {
 		case DEBIAN:
-			install("-y", "php5");
+			install("php5");
 			break;
 		case RED_HAT:
-			install("-y", "phpl");
+			install("php");
 			break;
 		}
 
