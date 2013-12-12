@@ -15,7 +15,7 @@ import org.gears.vim.Vim;
 
 public class WebGear extends Gear {
 	
-	private static final Logger LOG = Logger.getLogger(WebGear.class);
+	static final Logger LOG = Logger.getLogger(WebGear.class);
 	
 	ProductionEnv env   = new ProductionEnv();
 	
@@ -31,24 +31,21 @@ public class WebGear extends Gear {
 		
 //		update();
 		
-		// Install Vim to all machines		
-//		install( vim );
-//		
-//		install("web", php );
-//		install("web", apache );
-//		install("web", getMySQLClientContext());
+		install( vim );
+		
+		install("web", php );
+		install("web", apache );
+		install("web", getMySQLClientContext());
 		render ("web", "info.php", getRenderInfoContext());
 		
-//		install("db", mysql);
-//		
-//		install("cache", memcached);
-//
-//		install("web", getMemcachedContext());
-//		
+		install("db", mysql);
+		
+		install("cache", memcached);
+		install("web", getMemcachedContext());
+		
 		install("lb", haproxy);
 
 		service("web", apache, Service.RESTART);
-		
 		
 	}
 	

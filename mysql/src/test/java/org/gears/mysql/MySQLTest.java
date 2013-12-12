@@ -1,7 +1,5 @@
 package org.gears.mysql;
 
-import static org.junit.Assert.*;
-
 import org.gears.Configuration;
 import org.gears.Application;
 import org.gears.Instance;

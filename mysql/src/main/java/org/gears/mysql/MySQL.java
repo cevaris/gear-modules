@@ -1,14 +1,13 @@
 package org.gears.mysql;
 
 import org.apache.log4j.Logger;
-import org.gears.Application;
 import org.gears.GearApplication;
 import org.gears.Service;
 import org.gears.System;
 
 public class MySQL extends GearApplication {
 	
-	private static final Logger LOG = Logger.getLogger(MySQL.class);
+	static final Logger LOG = Logger.getLogger(MySQL.class);
 	
 	/**
 	 * For MySQL config file
