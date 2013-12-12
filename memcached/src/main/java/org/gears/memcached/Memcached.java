@@ -1,6 +1,5 @@
 package org.gears.memcached;
 
-import org.gears.Application;
 import org.gears.GearApplication;
 import org.gears.Service;
 import org.gears.System;
@@ -12,7 +11,13 @@ public class Memcached extends GearApplication {
 
 	@Override
 	public void execute() {
-		install("memcached php5-memcached php php-pecl-memcache");
+		
+		if(isSystem(System.RED_HAT)){
+			install("memcached php5-memcached php php-pecl-memcache");
+		} else if(isSystem(System.DEBIAN)){
+			install("memcached php5-memcached");
+		}
+		
 		
 		openPort(this.port);
 		

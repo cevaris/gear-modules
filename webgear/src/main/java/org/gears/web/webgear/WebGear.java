@@ -22,7 +22,7 @@ public class WebGear extends Gear {
 	
 	private static final Logger LOG = Logger.getLogger(WebGear.class);
 	
-	ProductionEnv env    = new ProductionEnv();
+	ProductionEnv env   = new ProductionEnv();
 	
 	Application mysql   = new MySQL();
 	Application vim     = new Vim();
@@ -34,7 +34,7 @@ public class WebGear extends Gear {
 	@Override
 	public void execute() {
 		
-//		update("web");
+//		update();
 		
 		// Install Vim to all machines		
 		install( vim );
@@ -42,43 +42,20 @@ public class WebGear extends Gear {
 		install("web", php );
 		install("web", apache );
 		install("web", getMySQLClientContext());
-		render ("web", "info.php", "/var/www/html/info.php");
+//		render ("web", "info.php", "/var/www/html/info.php");
+		render ("web", "info.php", "/var/www/info.php");
 		
 		install("db", mysql);
 		
 		install("cache", memcached);
 
-		install("web", "php5-memcached php-pecl-memcache");
+//		install("web", "php5-memcached php-pecl-memcache");
+		install("web", "php5-memcached");
 		
 		install("lb", haproxy);
-		
+
 		service("web", apache, Service.RESTART);
 		
-		
-		// Install web and mysql to web servers
-//		for(Instance instance : config.getInstances("web")){
-//			instance.install( php );
-//			instance.install( apache );
-//			instance.install( "mysql-client php5-mysql" );
-//			instance.render("info.php", "/var/www/html/info.php", Templaton.getContext(this));
-//			instance.install("php5-memcached");
-//		}
-//		
-//		for(Instance instance : config.getInstances("db")){
-//			instance.install(mysql);
-//		}
-//		
-//		for(Instance instance : config.getInstances("lb")){
-//			instance.install(haproxy);
-//		}
-//		
-//		for(Instance instance : config.getInstances("cache")){
-//			instance.install(memcached);
-//		}
-//		
-//		for(Instance instance : config.getInstances("web")){
-//			instance.service(apache, Service.RESTART);
-//		}
 		
 	}
 	

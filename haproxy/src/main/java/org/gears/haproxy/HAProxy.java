@@ -26,7 +26,7 @@ public class HAProxy extends GearApplication {
 	}
 
 	private void renderConfig(){
-//		render("default.haproxy.vm", "/etc/default/haproxy");
+		render("default.haproxy.vm", "/etc/default/haproxy");
 		render("haproxy.cfg.vm",     "/etc/haproxy/haproxy.cfg");
 	}
 	

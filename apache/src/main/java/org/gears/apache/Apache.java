@@ -28,7 +28,7 @@ public class Apache extends GearApplication {
 	@Override
 	public String toString() {
 		if(isSystem(System.DEBIAN)){
-			return "apache";
+			return "apache2";
 		} else if(isSystem(System.RED_HAT)){
 			return "httpd";
 		} else {
