@@ -35,13 +35,13 @@ public class WebGear extends GearApplication {
 		
 		install("web", php );
 		install("web", apache );
-		install("web", getMySQLClientContext());
-		render ("web", "info.php", getRenderInfoContext());
+		install("web", getMySQLClient());
+		render ("web", "info.php", getRenderInfo());
 		
 		install("db", mysql);
 		
 		install("cache", memcached);
-		install("web", getMemcachedContext());
+		install("web", getMemcached());
 		
 		install("lb", haproxy);
 
@@ -51,7 +51,7 @@ public class WebGear extends GearApplication {
 	
 	
 
-	private HashMap<System, Object> getMemcachedContext() {
+	private HashMap<System, Object> getMemcached() {
 		HashMap<System, Object> context = new HashMap<System, Object>();
 		
 		context.put(System.DEBIAN,  "php5-memcached" );
@@ -60,7 +60,7 @@ public class WebGear extends GearApplication {
 		return context;
 	}
 	
-	private HashMap<System, Object> getRenderInfoContext() {
+	private HashMap<System, Object> getRenderInfo() {
 		HashMap<System, Object> context = new HashMap<System, Object>();
 		
 		context.put(System.DEBIAN,  "/var/www/info.php" );
@@ -70,7 +70,7 @@ public class WebGear extends GearApplication {
 	}
 
 
-	private HashMap<System, Object> getMySQLClientContext() {
+	private HashMap<System, Object> getMySQLClient() {
 		HashMap<System, Object> context = new HashMap<System, Object>();
 		
 		context.put(System.DEBIAN,  "mysql-client php5-mysql" );
