@@ -12,7 +12,13 @@ echo "X-Forwarded-for: ".$_SERVER['HTTP_X_FORWARDED_FOR']."<br/>";
 
 echo "<hr/>";
 
-$m = new Memcached() or new Memcache();
+$m = NULL;
+if (class_exists('Memcached')) {
+    $m = new Memcached();
+} else {
+	$m = new Memcache();
+}
+
 $m->addServer('192.168.2.104', 11211);
 
 $n = $m->get('counter');

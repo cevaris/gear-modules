@@ -10,9 +10,6 @@ public class WebGearTest {
 		Application webGear = new WebGear();
 		webGear.execute();
 	}
-	
-	
-
 }
 
 

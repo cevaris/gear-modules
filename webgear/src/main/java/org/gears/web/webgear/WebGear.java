@@ -3,18 +3,13 @@ package org.gears.web.webgear;
 import java.util.HashMap;
 
 import org.apache.log4j.Logger;
-import org.gears.Configuration;
 import org.gears.Application;
-import org.gears.GearApplication;
-import org.gears.Instance;
 import org.gears.Gear;
 import org.gears.Service;
 import org.gears.System;
 import org.gears.apache.Apache;
-import org.gears.memcached.Memcached;
 import org.gears.mysql.MySQL;
 import org.gears.php.PHP;
-import org.gears.template.Templaton;
 import org.gears.vim.Vim;
 
 
@@ -37,21 +32,19 @@ public class WebGear extends Gear {
 //		update();
 		
 		// Install Vim to all machines		
-		install( vim );
+//		install( vim );
+//		
+//		install("web", php );
+//		install("web", apache );
+//		install("web", getMySQLClientContext());
+		render ("web", "info.php", getRenderInfoContext());
 		
-		install("web", php );
-		install("web", apache );
-		install("web", getMySQLClientContext());
-//		render ("web", "info.php", "/var/www/html/info.php");
-		render ("web", "info.php", "/var/www/info.php");
-		
-		install("db", mysql);
-		
-		install("cache", memcached);
-
-//		install("web", "php5-memcached php-pecl-memcache");
-		install("web", "php5-memcached");
-		
+//		install("db", mysql);
+//		
+//		install("cache", memcached);
+//
+//		install("web", getMemcachedContext());
+//		
 		install("lb", haproxy);
 
 		service("web", apache, Service.RESTART);
@@ -60,6 +53,25 @@ public class WebGear extends Gear {
 	}
 	
 	
+	private HashMap<System, Object> getMemcachedContext() {
+		HashMap<System, Object> context = new HashMap<System, Object>();
+		
+		context.put(System.DEBIAN,  "php5-memcached" );
+		context.put(System.RED_HAT, "php-pecl-memcache" );
+		
+		return context;
+	}
+	
+	private HashMap<System, Object> getRenderInfoContext() {
+		HashMap<System, Object> context = new HashMap<System, Object>();
+		
+		context.put(System.DEBIAN,  "/var/www/info.php" );
+		context.put(System.RED_HAT, "/var/www/html/info.php" );
+		
+		return context;
+	}
+
+
 	private HashMap<System, Object> getMySQLClientContext() {
 		HashMap<System, Object> context = new HashMap<System, Object>();
 		
