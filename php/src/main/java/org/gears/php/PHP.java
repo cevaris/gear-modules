@@ -2,6 +2,7 @@ package org.gears.php;
 
 import org.gears.Application;
 import org.gears.GearApplication;
+import org.gears.System;
 
 public class PHP extends GearApplication {
 
@@ -18,6 +19,17 @@ public class PHP extends GearApplication {
 			break;
 		}
 
+	}
+	
+	@Override
+	public String toString() {
+		if(isSystem(System.RED_HAT)){
+			return "php";
+		} else if(isSystem(System.DEBIAN)){
+			return "php5";
+		} else {
+			return null;
+		}
 	}
 
 }

@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.gears.Application;
+import org.gears.GearApplication;
+import org.gears.Service;
 
 
-public class HAProxy extends Application {
+public class HAProxy extends GearApplication {
 	
 	public List<Slave> slaves = new ArrayList<Slave>();
 	
@@ -16,16 +18,15 @@ public class HAProxy extends Application {
 	
 	@Override
 	public void execute() {
-		install( "-y", "haproxy" );
+		install( "haproxy" );
 		
 		renderConfig();
 
-		start("haproxy");
-		restart(this);
+		service("haproxy", Service.RESTART);
 	}
 
 	private void renderConfig(){
-		render("default.haproxy.vm", "/etc/default/haproxy");
+//		render("default.haproxy.vm", "/etc/default/haproxy");
 		render("haproxy.cfg.vm",     "/etc/haproxy/haproxy.cfg");
 	}
 	

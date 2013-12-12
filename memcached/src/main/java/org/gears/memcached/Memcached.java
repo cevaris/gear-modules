@@ -1,22 +1,28 @@
 package org.gears.memcached;
 
 import org.gears.Application;
+import org.gears.GearApplication;
+import org.gears.Service;
+import org.gears.System;
 
-public class Memcached extends Application {
+public class Memcached extends GearApplication {
 	
 	public String port = "11211";
 	public String ipAddress = "127.0.0.1";
 
 	@Override
 	public void execute() {
-		install("-y", "memcached php5-memcached");
+		install("memcached php5-memcached php php-pecl-memcache");
 		
 		openPort(this.port);
 		
-		render("memcached.conf.vm", "/etc/memcached.conf");
+		if(isSystem(System.RED_HAT)){
+			render("redhat.memcached.conf.vm", "/etc/sysconfig/memcached");
+		} else if(isSystem(System.DEBIAN)){
+			render("debian.memcached.conf.vm", "/etc/memcached.conf");
+		}
 		
-		start(this);
-		restart(this);
+		service("memcached", Service.RESTART);
 	}
 	
 	@Override

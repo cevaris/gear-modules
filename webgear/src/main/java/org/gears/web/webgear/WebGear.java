@@ -24,12 +24,12 @@ public class WebGear extends Gear {
 	
 	ProductionEnv env    = new ProductionEnv();
 	
-//	Application mysql   = new MySQL();
+	Application mysql   = new MySQL();
 	Application vim     = new Vim();
 	Application php     = new PHP();
 	Application apache  = new Apache();
-//	Application haproxy = new HAPRoxyApp();
-//	Application memcached = new MemcachedApp();
+	Application haproxy = new HAPRoxyApp();
+	Application memcached = new MemcachedApp();
 
 	@Override
 	public void execute() {
@@ -37,14 +37,23 @@ public class WebGear extends Gear {
 //		update("web");
 		
 		// Install Vim to all machines		
-		install("web", vim );
+		install( vim );
 		
-		install("web", php );
-		install("web", apache );
+//		install("web", php );
+//		install("web", apache );
+//		install("web", getMySQLClientContext());
+//		render ("web", "info.php", "/var/www/html/info.php");
+//		
+//		install("db", mysql);
+//		
+//		install("cache", memcached);
+//
+//		install("web", "php5-memcached php-pecl-memcache");
+//		
+		install("lb", haproxy);
 		
-		install("web", getMySQLClientContext());
+		service("web", apache, Service.RESTART);
 		
-		render("web", "info.php", "/var/www/html/info.php");
 		
 		// Install web and mysql to web servers
 //		for(Instance instance : config.getInstances("web")){

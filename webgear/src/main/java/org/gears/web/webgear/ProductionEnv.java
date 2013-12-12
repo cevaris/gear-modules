@@ -21,10 +21,10 @@ public class ProductionEnv extends Environment {
 		config.addInstance("web", new Instance("192.168.2.101", SSH_KEY, System.RED_HAT) );
 		
 		config.addInstance("db",  new Instance("192.168.2.102", SSH_KEY, System.RED_HAT) );
-//		
-//		config.addInstance("lb",  new Instance("192.168.2.103", SSH_KEY) );
-//		
-//		config.addInstance("cache",  new Instance("192.168.2.104", SSH_KEY) );
+		
+		config.addInstance("lb",  new Instance("192.168.2.103", SSH_KEY, System.RED_HAT) );
+		
+		config.addInstance("cache",  new Instance("192.168.2.104", SSH_KEY, System.RED_HAT) );
 		
 	}
 
