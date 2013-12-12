@@ -1,10 +1,10 @@
 package org.gears.apache;
 
-import org.gears.GearApplication;
+import org.gears.GearModule;
 import org.gears.Service;
 import org.gears.System;
 
-public class Apache extends GearApplication {
+public class Apache extends GearModule {
 	
 		
 	@Override

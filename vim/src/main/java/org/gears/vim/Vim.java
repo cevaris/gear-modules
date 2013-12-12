@@ -1,10 +1,10 @@
 package org.gears.vim;
 
-import org.gears.Application;
-import org.gears.GearApplication;
+import org.gears.Gear;
+import org.gears.GearModule;
 import org.gears.System;
 
-public class Vim extends GearApplication {
+public class Vim extends GearModule {
 	
 	@Override
 	public void execute() {

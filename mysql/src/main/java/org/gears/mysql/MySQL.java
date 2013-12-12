@@ -1,29 +1,42 @@
 package org.gears.mysql;
 
 import org.apache.log4j.Logger;
-import org.gears.GearApplication;
+import org.gears.GearModule;
 import org.gears.Service;
 import org.gears.System;
 
-public class MySQL extends GearApplication {
+public class MySQL extends GearModule {
+	
+	public String ipAddress = "127.0.0.1";
+	public String port 	    = "3306";
+	public String dataDir   = "/var/lib/mysql";
+	public String socket    = "/var/lib/mysql/mysql.sock";
+	public String user      = "mysql";
+	public String logError  = "/var/log/mysqld.log";
+	public String pidFile   = "/var/run/mysqld/mysqld.pid";
 	
 	static final Logger LOG = Logger.getLogger(MySQL.class);
 	
-	/**
-	 * For MySQL config file
-	 * http://stackoverflow.com/questions/1167056/optimal-mysql-configuration-my-cnf
-	 */
 	public String MYSQL_USER = "root";
 	public String MYSQL_PASS = "mypass";
-	
-	public String port = "3306";
-	public String ipAddress = "127.0.0.1";
 	
 	public String getPort() {
 		return port;
 	}
 	public String getIpAddress() {
 		return ipAddress;
+	}
+	public String getDataDir() {
+		return dataDir;
+	}
+	public String getUser() {
+		return user;
+	}
+	public String getLogError() {
+		return logError;
+	}
+	public String getPidFile() {
+		return pidFile;
 	}
 
 	@Override
@@ -57,6 +70,7 @@ public class MySQL extends GearApplication {
 		
 		if(isSystem(System.RED_HAT)){
 			service("mysqld", Service.RESTART);
+			
 		} else if(isSystem(System.DEBIAN)){
 			service("mysql", Service.RESTART);
 		}

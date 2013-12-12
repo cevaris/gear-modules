@@ -1,10 +1,10 @@
 package org.gears.php;
 
-import org.gears.Application;
-import org.gears.GearApplication;
+import org.gears.Gear;
+import org.gears.GearModule;
 import org.gears.System;
 
-public class PHP extends GearApplication {
+public class PHP extends GearModule {
 
 	@Override
 	public void execute() {

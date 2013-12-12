@@ -1,13 +1,13 @@
 package org.gears.web.webgear;
 
-import org.gears.Application;
+import org.gears.Gear;
 import org.junit.Test;
 
 public class WebGearTest {
 
 	@Test
 	public void test() {
-		Application webGear = new WebGear();
+		Gear webGear = new WebGear();
 		webGear.execute();
 	}
 }

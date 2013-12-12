@@ -6,5 +6,6 @@ target/
 tmp/
 logs/
 ./gears/
+gears-uml/
 *.zip
 *.log

@@ -1,10 +1,10 @@
 package org.gears.memcached;
 
-import org.gears.GearApplication;
+import org.gears.GearModule;
 import org.gears.Service;
 import org.gears.System;
 
-public class Memcached extends GearApplication {
+public class Memcached extends GearModule {
 	
 	public String port = "11211";
 	public String ipAddress = "127.0.0.1";

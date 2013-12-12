@@ -3,8 +3,8 @@ package org.gears.web.webgear;
 import java.util.HashMap;
 
 import org.apache.log4j.Logger;
-import org.gears.Application;
 import org.gears.Gear;
+import org.gears.GearApplication;
 import org.gears.Service;
 import org.gears.System;
 import org.gears.apache.Apache;
@@ -13,18 +13,18 @@ import org.gears.php.PHP;
 import org.gears.vim.Vim;
 
 
-public class WebGear extends Gear {
+public class WebGear extends GearApplication {
 	
 	static final Logger LOG = Logger.getLogger(WebGear.class);
 	
 	ProductionEnv env   = new ProductionEnv();
 	
-	Application mysql   = new MySQL();
-	Application vim     = new Vim();
-	Application php     = new PHP();
-	Application apache  = new Apache();
-	Application haproxy = new HAPRoxyApp();
-	Application memcached = new MemcachedApp();
+	Gear mysql   = new MySQL();
+	Gear vim     = new Vim();
+	Gear php     = new PHP();
+	Gear apache  = new Apache();
+	Gear haproxy = new HAPRoxyApp();
+	Gear memcached = new MemcachedApp();
 
 	@Override
 	public void execute() {
@@ -46,10 +46,11 @@ public class WebGear extends Gear {
 		install("lb", haproxy);
 
 		service("web", apache, Service.RESTART);
-		
+
 	}
 	
 	
+
 	private HashMap<System, Object> getMemcachedContext() {
 		HashMap<System, Object> context = new HashMap<System, Object>();
 		

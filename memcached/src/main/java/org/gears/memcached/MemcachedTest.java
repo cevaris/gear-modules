@@ -1,7 +1,7 @@
 package org.gears.memcached;
 
 import org.gears.Configuration;
-import org.gears.Application;
+import org.gears.Gear;
 import org.gears.Instance;
 import org.gears.utils.ResourceUtil;
 import org.junit.Test;
@@ -15,7 +15,7 @@ public class MemcachedTest {
 		
 		Configuration.getInstance().addInstance("cache", new Instance("192.168.2.104", SSH_KEY));
 		
-		Application memcached = new Memcached();
+		Gear memcached = new Memcached();
 		memcached.execute();
 		
 		
