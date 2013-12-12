@@ -39,7 +39,7 @@ public class WebGear extends Gear {
 		install("web", php );
 		install("web", apache );
 		
-		render("info.php", "/var/www/html/info.php", Templaton.getContext(this));
+		render("info.php", "/var/www/html/info.php");
 		
 		
 		// Install web and mysql to web servers
