@@ -1,5 +1,7 @@
 package org.gears.web.webgear;
 
+import java.util.HashMap;
+
 import org.apache.log4j.Logger;
 import org.gears.Configuration;
 import org.gears.Application;
@@ -7,6 +9,7 @@ import org.gears.GearApplication;
 import org.gears.Instance;
 import org.gears.Gear;
 import org.gears.Service;
+import org.gears.System;
 import org.gears.apache.Apache;
 import org.gears.memcached.Memcached;
 import org.gears.mysql.MySQL;
@@ -39,8 +42,9 @@ public class WebGear extends Gear {
 		install("web", php );
 		install("web", apache );
 		
-		render("info.php", "/var/www/html/info.php");
+		install("web", getMySQLClientContext());
 		
+		render("web", "info.php", "/var/www/html/info.php");
 		
 		// Install web and mysql to web servers
 //		for(Instance instance : config.getInstances("web")){
@@ -68,8 +72,26 @@ public class WebGear extends Gear {
 //		}
 		
 	}
-
 	
+	
+	private HashMap<System, Object> getMySQLClientContext() {
+		HashMap<System, Object> context = new HashMap<System, Object>();
+		
+		context.put(System.DEBIAN,  "mysql-client php5-mysql" );
+		context.put(System.RED_HAT, "mysql php-mysql" );
+		
+		return context;
+		
+//		for(Instance instance : Configuration.getInstance().getInstances("web")){
+//			switch(instance.getSystem()){
+//			case RED_HAT:
+//				instance.install("mysql php-mysql");
+//			case DEBIAN:
+//				instance.install("mysql-client php5-mysql");
+//			}
+//		}
+	}
+
 
 	
 
