@@ -39,17 +39,17 @@ public class WebGear extends Gear {
 		// Install Vim to all machines		
 		install( vim );
 		
-//		install("web", php );
-//		install("web", apache );
-//		install("web", getMySQLClientContext());
-//		render ("web", "info.php", "/var/www/html/info.php");
-//		
-//		install("db", mysql);
-//		
-//		install("cache", memcached);
-//
-//		install("web", "php5-memcached php-pecl-memcache");
-//		
+		install("web", php );
+		install("web", apache );
+		install("web", getMySQLClientContext());
+		render ("web", "info.php", "/var/www/html/info.php");
+		
+		install("db", mysql);
+		
+		install("cache", memcached);
+
+		install("web", "php5-memcached php-pecl-memcache");
+		
 		install("lb", haproxy);
 		
 		service("web", apache, Service.RESTART);
