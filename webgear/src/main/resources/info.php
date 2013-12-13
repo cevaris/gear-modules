@@ -8,24 +8,11 @@ echo "<hr/>";
 
 
 
-
-
-
-
-
-
 // Load balancer example
 echo "Server IP: ".$_SERVER['SERVER_ADDR']."<br/>";
 echo "Client IP: ".$_SERVER['REMOTE_ADDR']."<br/>";
 echo "X-Forwarded-for: ".$_SERVER['HTTP_X_FORWARDED_FOR']."<br/>";
 echo "<hr/>";
-
-
-
-
-
-
-
 
 
 // Memcached example
